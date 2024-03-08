@@ -1,4 +1,14 @@
+const isEven = (num) => {
+    if (num % 2 === 0){
+        return true;
+    } else {
+        return false;
+    }
+};
 
+const sum = (nums) => nums.reduce((a, b)=> {
+    return a + b;
+}, 0);
 
 const range = (start, end)=> Array(end - start + 1).fill(start).map((element, index)=> element + index);
 const charRange = (start, end) => range(start.charCodeAt(0), end.charCodeAt(0)).map(code => String.fromCharCode(code));
