@@ -26,7 +26,9 @@ const median = (nums) => {
     : sorted[Math.ceil(middle)]
   };
 
-  const spreadsheetFunctions = { sum, average, median, even: nums => nums.filter(isEven)};
+  const spreadsheetFunctions = { sum, average, median, even: nums => nums.filter(isEven), firsttwo: nums => nums.slice(0, 2),
+    lasttwo: nums => nums.slice( -2)};
+
 
   const applyFunction = (str) => {
     const noHigh = highPrecedence(str);
