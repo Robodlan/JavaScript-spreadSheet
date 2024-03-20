@@ -32,6 +32,8 @@ const median = (nums) => {
     increment: nums => nums.map(num => num + 1),
     someeven: nums => nums.some(num => num % 2 === 0),
     everyeven: nums => nums.every(num => num % 2 === 0),
+    random: ([x, y]) => Math.floor(Math.random() * y * x),
+    range: ([x, y]) => range(x , y)
     };
 
 
