@@ -27,13 +27,15 @@ const median = (nums) => {
   };
 
   const spreadsheetFunctions = { sum, average, median, even: nums => nums.filter(isEven), firsttwo: nums => nums.slice(0, 2),
+    "": arg => arg,
     lasttwo: nums => nums.slice( -2),
     has2: nums => nums.includes(2),
     increment: nums => nums.map(num => num + 1),
     someeven: nums => nums.some(num => num % 2 === 0),
     everyeven: nums => nums.every(num => num % 2 === 0),
     random: ([x, y]) => Math.floor(Math.random() * y * x),
-    range: ([x, y]) => range(x , y)
+    range: ([x, y]) => range(x , y),
+    nodupes: nums => [...new Set(nums)]
     };
 
 
